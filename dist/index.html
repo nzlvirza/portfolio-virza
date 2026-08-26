@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Nazla Virza Rahman — Information Systems Student</title>
+        <meta name="description" content="Portfolio of Nazla Virza Rahman, an Information Systems student with experience in Android development, UI/UX design, quality assurance, software testing, and database management.">
+        <meta property="og:title" content="Nazla Virza Rahman — Information Systems Student">
+        <meta property="og:description" content="Portfolio of Nazla Virza Rahman, an Information Systems student with experience in Android development, UI/UX design, quality assurance, software testing, and database management.">
+        <meta property="og:type" content="website">
+        <meta name="theme-color" content="#030710">
+
+        <link rel="icon" href="./favicon.ico">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700|jetbrains-mono:400,500" rel="stylesheet" />
+
+        <!-- Enable JS-dependent styles as early as possible -->
+        <script>
+            document.documentElement.classList.remove('no-js');
+            document.documentElement.classList.add('js');
+        </script>
+
+        <!-- Vite -->
+      <script type="module" crossorigin src="./assets/index-C6Sl3wuD.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-D514A3-b.css">
+    </head>
+    <body class="min-h-screen overflow-x-clip bg-night-950 font-sans text-slate-300 antialiased">
+        <!-- Ambient background glow -->
+        <div class="pointer-events-none fixed inset-0 -z-10" aria-hidden="true">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_50%_-5%,rgba(75,118,238,0.14),transparent_70%)]"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_88%_108%,rgba(44,69,148,0.16),transparent_70%)]"></div>
+        </div>
+
+        <!-- Navbar -->
+        <header data-site-nav class="site-nav">
+            <div class="container-site">
+                <div class="nav-inner">
+                    <a href="#home" class="text-lg font-bold tracking-tight text-white transition-colors duration-300 hover:text-accent-300">
+                        Nazla Virza Rahman<span class="text-accent-400">.</span>
+                    </a>
+
+                    <nav class="hidden items-center gap-8 lg:flex" aria-label="Main navigation">
+                        <a href="#home" data-nav-link class="nav-link">Home</a>
+                        <a href="#about" data-nav-link class="nav-link">About</a>
+                        <a href="#skills" data-nav-link class="nav-link">Skills</a>
+                        <a href="#projects" data-nav-link class="nav-link">Projects</a>
+                        <a href="#experience" data-nav-link class="nav-link">Experience</a>
+                        <a href="#education" data-nav-link class="nav-link">Education</a>
+                        <a href="#contact" data-nav-link class="nav-link">Contact</a>
+                        <span class="h-5 w-px bg-white/10" aria-hidden="true"></span>
+                        <a
+                            href="./cv/Nazla-Virza-Rahman-CV.pdf"
+                            download="Nazla-Virza-Rahman-CV.pdf"
+                            class="rounded-full border border-accent-400/40 px-4 py-1.5 text-sm font-medium text-accent-300 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent-500/10 hover:text-white"
+                        >
+                            Resume
+                        </a>
+                    </nav>
+
+                    <button type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false"
+                        aria-controls="mobile-menu"
+                        class="grid size-10 cursor-pointer place-items-center rounded-lg border border-white/10 text-slate-300 transition-colors duration-300 hover:border-accent-400/40 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-400/60 lg:hidden">
+                        <span class="flex flex-col gap-[5px]">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" data-mobile-menu class="mobile-menu">
+                <div class="container-site py-6">
+                    <ul class="flex flex-col gap-1">
+                        <li><a href="#home" data-nav-link class="block rounded-lg px-4 py-3 text-base font-medium text-slate-300 transition-colors duration-300 hover:bg-white/5 hover:text-white">Home</a></li>
+                        <li><a href="#about" data-nav-link class="block rounded-lg px-4 py-3 text-base font-medium text-slate-300 transition-colors duration-300 hover:bg-white/5 hover:text-white">About</a></li>
+                        <li><a href="#skills" data-nav-link class="block rounded-lg px-4 py-3 text-base font-medium text-slate-300 transition-colors duration-300 hover:bg-white/5 hover:text-white">Skills</a></li>
+                        <li><a href="#projects" data-nav-link class="block rounded-lg px-4 py-3 text-base font-medium text-slate-300 transition-colors duration-300 hover:bg-white/5 hover:text-white">Projects</a></li>
+                        <li><a href="#experience" data-nav-link class="block rounded-lg px-4 py-3 text-base font-medium text-slate-300 transition-colors duration-300 hover:bg-white/5 hover:text-white">Experience</a></li>
+                        <li><a href="#education" data-nav-link class="block rounded-lg px-4 py-3 text-base font-medium text-slate-300 transition-colors duration-300 hover:bg-white/5 hover:text-white">Education</a></li>
+                        <li><a href="#contact" data-nav-link class="block rounded-lg px-4 py-3 text-base font-medium text-slate-300 transition-colors duration-300 hover:bg-white/5 hover:text-white">Contact</a></li>
+                        <li class="mt-3 border-t border-white/[0.06] pt-4 px-2">
+                            <a href="./cv/Nazla-Virza-Rahman-CV.pdf" download="Nazla-Virza-Rahman-CV.pdf" class="btn btn-secondary w-full">
+                                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"></path><path d="m7 10.5 5 5 5-5"></path><path d="M4.5 19.5h15"></path></svg>
+                                Download CV
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main id="content">
+
+            <!-- Hero -->
+            <section id="home" class="relative flex min-h-svh items-center overflow-hidden pb-20 pt-28">
+                <div class="pointer-events-none absolute inset-0 [background-image:repeating-linear-gradient(0deg,transparent,transparent_55px,rgba(255,255,255,0.03)_55px,rgba(255,255,255,0.03)_56px),repeating-linear-gradient(90deg,transparent,transparent_55px,rgba(255,255,255,0.03)_55px,rgba(255,255,255,0.03)_56px)] [background-size:56px_56px] [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)]" aria-hidden="true"></div>
+
+                <div class="container-site relative">
+                    <div class="grid items-center gap-16 lg:grid-cols-[1.25fr_0.75fr]">
+                        <div>
+                            <p class="eyebrow mb-6 flex items-center gap-3" data-reveal>
+                                <span class="h-px w-10 bg-accent-500/70" aria-hidden="true"></span>
+                                Hi, my name is
+                            </p>
+                            <h1 data-reveal style="--reveal-delay: 100ms" class="text-balance">
+                                <span class="block text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+                                    Nazla Virza Rahman<span class="text-accent-400">.</span>
+                                </span>
+                                <span class="mt-4 block text-2xl font-semibold tracking-tight text-accent-300 sm:text-3xl lg:text-4xl">
+                                    Information Systems Student
+                                </span>
+                            </h1>
+                            <p data-reveal style="--reveal-delay: 200ms" class="mt-7 max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg">
+                                Information Systems student with experience in Android application development, UI/UX design, quality assurance, software testing, and database management.
+                            </p>
+                            <div data-reveal style="--reveal-delay: 300ms" class="mt-10 flex flex-wrap items-center gap-4">
+                                <a href="#projects" class="btn btn-primary group">
+                                    View My Projects
+                                    <svg class="size-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="m13 5 7 7-7 7"></path></svg>
+                                </a>
+                                <a href="./cv/Nazla-Virza-Rahman-CV.pdf" download="Nazla-Virza-Rahman-CV.pdf" class="btn btn-secondary group">
+                                    <svg class="size-4 transition-transform duration-300 group-hover:translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"></path><path d="m7 10.5 5 5 5-5"></path><path d="M4.5 19.5h15"></path></svg>
+                                    Download CV
+                                </a>
+                            </div>
+                            <div data-reveal style="--reveal-delay: 400ms" class="mt-12 flex items-center gap-3">
+                                <a href="https://github.com/nzlvirza" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub — @nzlvirza" class="icon-btn">
+                                    <svg class="size-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/virza" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn — in/virza" class="icon-btn">
+                                    <svg class="size-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.54V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+                                </a>
+                                <a href="https://instagram.com/nzlavirza" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram — @nzlavirza" class="icon-btn">
+                                    <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+                                </a>
+                                <a href="mailto:virzarahman@gmail.com" aria-label="Email" title="Email — virzarahman@gmail.com" class="icon-btn">
+                                    <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="m3.5 6.5 8.5 6 8.5-6"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="relative hidden justify-self-end lg:block" aria-hidden="true">
+                            <div class="absolute -inset-16 rounded-full bg-accent-500/10 blur-3xl"></div>
+                            <div class="relative size-80 xl:size-[22rem]">
+                                <span class="absolute inset-0 rounded-full border border-white/[0.06]"></span>
+                                <span class="absolute inset-10 rounded-full border border-accent-500/15"></span>
+                                <span class="animate-spin-slower absolute inset-20 rounded-full border border-dashed border-white/10"></span>
+                                <div class="animate-float absolute inset-0 m-auto grid size-44 place-items-center rounded-full border border-white/10 bg-white/[0.04] shadow-glow backdrop-blur-md overflow-hidden">
+                                    <img src="./images/profile.jpg" alt="Nazla Virza Rahman profile photo" class="size-full object-cover" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#about" aria-label="Scroll to about section" class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 text-slate-600 transition-colors duration-300 hover:text-accent-300 md:block">
+                    <span class="animate-bounce-soft block">
+                        <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 9 7 7 7-7"></path></svg>
+                    </span>
+                </a>
+            </section>
+
+            <!-- About -->
+            <section id="about" class="relative scroll-mt-20 py-24 sm:py-28">
+                <div class="container-site">
+                    <div class="mb-14 mt-0" data-reveal>
+                        <div class="flex items-center gap-4">
+                            <p class="eyebrow">01.</p>
+                            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">About Me</h2>
+                            <span class="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="grid gap-12 lg:grid-cols-[1fr_320px] lg:gap-16">
+                        <div data-reveal-group>
+                            <p data-reveal class="mb-5 leading-relaxed text-slate-400 last:mb-0">I am an Information Systems student with a strong interest in application development, quality assurance, databases, and UI/UX design. I enjoy building applications through academic and personal projects while continuously improving my technical skills and understanding of software development processes.</p>
+                            <p data-reveal class="mb-5 leading-relaxed text-slate-400 last:mb-0">I also have previous internship experience in quality assurance, data entry, and customer support, where I tested web and mobile applications, documented testing results, processed data, and assisted users with application-related issues.</p>
+                            <p data-reveal class="mb-5 leading-relaxed text-slate-400 last:mb-0">I am currently looking for an internship opportunity where I can apply my technical skills, gain professional experience, and continue growing in the IT industry.</p>
+                        </div>
+                        <aside data-reveal="right" class="card h-fit p-7">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-white">Quick Facts</h3>
+                            <dl class="mt-6 space-y-5">
+                                <div class="flex items-start justify-between gap-4 border-b border-white/[0.05] pb-4"><dt class="flex items-center gap-2 text-sm text-slate-500"><svg class="size-3.5 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Status</dt><dd class="text-right text-sm font-medium text-slate-200">Open to Internship</dd></div>
+                                <div class="flex items-start justify-between gap-4 border-b border-white/[0.05] pb-4"><dt class="flex items-center gap-2 text-sm text-slate-500"><svg class="size-3.5 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Location</dt><dd class="text-right text-sm font-medium text-slate-200">South Tangerang, Indonesia</dd></div>
+                                <div class="flex items-start justify-between gap-4 border-b border-white/[0.05] pb-4"><dt class="flex items-center gap-2 text-sm text-slate-500"><svg class="size-3.5 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Focus</dt><dd class="text-right text-sm font-medium text-slate-200">Information Technology</dd></div>
+                                <div class="flex items-start justify-between gap-4 border-b border-white/[0.05] pb-4 last:border-0 last:pb-0"><dt class="flex items-center gap-2 text-sm text-slate-500"><svg class="size-3.5 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Education</dt><dd class="text-right text-sm font-medium text-slate-200">Information Systems</dd></div>
+                            </dl>
+                            <span class="mt-7 inline-flex items-center gap-2 rounded-full border border-emerald-400/25 bg-emerald-400/[0.06] px-3 py-1.5 text-xs font-medium text-emerald-300">
+                                <span class="relative flex size-2">
+                                    <span class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60 motion-reduce:animate-none"></span>
+                                    <span class="relative inline-flex size-2 rounded-full bg-emerald-400"></span>
+                                </span>
+                                Open to Internship
+                            </span>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="relative scroll-mt-20 py-24 sm:py-28">
+                <div class="container-site">
+                    <div class="mb-14 mt-0" data-reveal>
+                        <div class="flex items-center gap-4">
+                            <p class="eyebrow">02.</p>
+                            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Skills &amp; Technologies</h2>
+                            <span class="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-reveal-group>
+                        <!-- Android -->
+                        <div data-reveal class="card card-hover group p-8">
+                            <div class="mb-6 grid size-12 place-items-center rounded-xl border border-accent-400/20 bg-accent-500/10 text-accent-300 transition-all duration-300 group-hover:border-accent-400/50 group-hover:shadow-glow">
+                                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2"></rect><path d="M10 19h4"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Android &amp; Application Development</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-500">Building mobile applications with cross-platform frameworks.</p>
+                            <ul class="mt-6 flex flex-wrap gap-2">
+                                <li class="chip">Flutter</li>
+                                <li class="chip">Dart</li>
+                                <li class="chip">Android Development</li>
+                            </ul>
+                        </div>
+                        <!-- Database -->
+                        <div data-reveal class="card card-hover group p-8">
+                            <div class="mb-6 grid size-12 place-items-center rounded-xl border border-accent-400/20 bg-accent-500/10 text-accent-300 transition-all duration-300 group-hover:border-accent-400/50 group-hover:shadow-glow">
+                                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="8" ry="3"></ellipse><path d="M4 5.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"></path><path d="M4 11.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Database</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-500">Managing and designing relational databases.</p>
+                            <ul class="mt-6 flex flex-wrap gap-2">
+                                <li class="chip">Supabase</li>
+                                <li class="chip">SQLite</li>
+                                <li class="chip">HiveDB</li>
+                            </ul>
+                        </div>
+                        <!-- UI/UX -->
+                        <div data-reveal class="card card-hover group p-8">
+                            <div class="mb-6 grid size-12 place-items-center rounded-xl border border-accent-400/20 bg-accent-500/10 text-accent-300 transition-all duration-300 group-hover:border-accent-400/50 group-hover:shadow-glow">
+                                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"></circle><circle cx="17.5" cy="10.5" r="1.5" fill="currentColor" stroke="none"></circle><circle cx="8.5" cy="7.5" r="1.5" fill="currentColor" stroke="none"></circle><circle cx="6.5" cy="12" r="1.5" fill="currentColor" stroke="none"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.75 1.5-1.5 0-.39-.14-.74-.39-1.04-.23-.29-.38-.63-.38-1.01 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-5.5-4.5-9.94-10-9.94Z"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">UI/UX Design</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-500">Designing user-centered interfaces and experiences.</p>
+                            <ul class="mt-6 flex flex-wrap gap-2">
+                                <li class="chip">Google Stitch</li>
+                                <li class="chip">Figma</li>
+                            </ul>
+                        </div>
+                        <!-- QA -->
+                        <div data-reveal class="card card-hover group p-8">
+                            <div class="mb-6 grid size-12 place-items-center rounded-xl border border-accent-400/20 bg-accent-500/10 text-accent-300 transition-all duration-300 group-hover:border-accent-400/50 group-hover:shadow-glow">
+                                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Quality Assurance &amp; Testing</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-500">Ensuring software quality through systematic testing.</p>
+                            <ul class="mt-6 flex flex-wrap gap-2">
+                                <li class="chip">Quality Assurance</li>
+                                <li class="chip">Software Testing</li>
+                                <li class="chip">Test Documentation</li>
+                            </ul>
+                        </div>
+                        <!-- Tools -->
+                        <div data-reveal class="card card-hover group p-8">
+                            <div class="mb-6 grid size-12 place-items-center rounded-xl border border-accent-400/20 bg-accent-500/10 text-accent-300 transition-all duration-300 group-hover:border-accent-400/50 group-hover:shadow-glow">
+                                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4.5 4.5 0 0 0 6 6l-8.4 8.4a2.1 2.1 0 0 1-3-3l8.4-8.4Z"></path><path d="m9.3 9.3-6-6"></path><path d="M3.3 9.3 9.3 3.3"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Tools</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-500">Productivity and version control tools.</p>
+                            <ul class="mt-6 flex flex-wrap gap-2">
+                                <li class="chip">Microsoft Excel</li>
+                                <li class="chip">Git</li>
+                                <li class="chip">GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="relative scroll-mt-20 py-24 sm:py-28">
+                <div class="container-site">
+                    <div class="mb-14 mt-0" data-reveal>
+                        <div class="flex items-center gap-4">
+                            <p class="eyebrow">03.</p>
+                            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Featured Projects</h2>
+                            <span class="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="grid gap-7 md:grid-cols-2" data-reveal-group>
+                        <!-- Project 1 -->
+                        <article data-reveal class="card card-hover group/card flex flex-col overflow-hidden">
+                            <figure class="relative aspect-[16/10] overflow-hidden border-b border-white/[0.06]">
+                                <div class="project-ph absolute inset-0 bg-night-900 transition-transform duration-500 group-hover/card:scale-105">
+                                    <span class="absolute inset-0 bg-gradient-to-br from-accent-600/15 via-transparent to-transparent" aria-hidden="true"></span>
+                                    <span class="absolute left-6 top-6 text-accent-400/70" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6.5A1.5 1.5 0 0 1 5 5h4.5l2 2.5H19a1.5 1.5 0 0 1 1.5 1.5v8.5A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5v-11Z"></path></svg></span>
+                                    <span class="pointer-events-none absolute inset-0 grid select-none place-items-center font-mono text-7xl font-bold text-white/[0.05]" aria-hidden="true">S</span>
+                                    <figcaption class="absolute bottom-5 right-6 font-mono text-xs tracking-widest text-accent-400/50">// student_attendance_system_–_qr_code</figcaption>
+                                </div>
+                                <span class="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent-400/40 to-transparent opacity-0 transition-opacity duration-500 group-hover/card:opacity-100" aria-hidden="true"></span>
+                            </figure>
+                            <div class="flex grow flex-col p-7">
+                                <h3 class="text-xl font-semibold text-white transition-colors duration-300 group-hover/card:text-accent-200">Student Attendance System – QR Code</h3>
+                                <p class="mt-3 grow text-sm leading-relaxed text-slate-400">An Android-based student attendance application developed as an academic project to simplify attendance using QR Code technology.</p>
+                                <ul class="mt-4 space-y-2">
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Developed an Android application for student attendance.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Implemented QR Code-based attendance functionality.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Designed the application interface with a focus on usability and user experience.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Implemented user authentication and role-based access for students and lecturers.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Managed attendance and user data using a database.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Developed the project as part of an academic Information Systems project.</li>
+                                </ul>
+                                <ul class="mt-5 flex flex-wrap gap-2">
+                                    <li class="tech-chip">Flutter</li>
+                                    <li class="tech-chip">Dart</li>
+                                    <li class="tech-chip">QR Code</li>
+                                    <li class="tech-chip">Mobile Application</li>
+                                    <li class="tech-chip">Database</li>
+                                </ul>
+                                <footer class="mt-6 flex items-center justify-between border-t border-white/[0.06] pt-5">
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-mono text-xs text-slate-600">Source available on request</span>
+                                    </div>
+                                </footer>
+                            </div>
+                        </article>
+
+                        <!-- Project 2 -->
+                        <article data-reveal class="card card-hover group/card flex flex-col overflow-hidden">
+                            <figure class="relative aspect-[16/10] overflow-hidden border-b border-white/[0.06]">
+                                <div class="project-ph absolute inset-0 bg-night-900 transition-transform duration-500 group-hover/card:scale-105">
+                                    <span class="absolute inset-0 bg-gradient-to-br from-accent-600/15 via-transparent to-transparent" aria-hidden="true"></span>
+                                    <span class="absolute left-6 top-6 text-accent-400/70" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6.5A1.5 1.5 0 0 1 5 5h4.5l2 2.5H19a1.5 1.5 0 0 1 1.5 1.5v8.5A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5v-11Z"></path></svg></span>
+                                    <span class="pointer-events-none absolute inset-0 grid select-none place-items-center font-mono text-7xl font-bold text-white/[0.05]" aria-hidden="true">E</span>
+                                    <figcaption class="absolute bottom-5 right-6 font-mono text-xs tracking-widest text-accent-400/50">// employee_payroll_&amp;_payslip_system</figcaption>
+                                </div>
+                                <span class="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent-400/40 to-transparent opacity-0 transition-opacity duration-500 group-hover/card:opacity-100" aria-hidden="true"></span>
+                            </figure>
+                            <div class="flex grow flex-col p-7">
+                                <h3 class="text-xl font-semibold text-white transition-colors duration-300 group-hover/card:text-accent-200">Employee Payroll &amp; Payslip System</h3>
+                                <p class="mt-3 grow text-sm leading-relaxed text-slate-400">An Android-based payroll management application designed to manage employee data, payroll processing, salary calculations, and employee payslips.</p>
+                                <ul class="mt-4 space-y-2">
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Role-based authentication for Admin, HR, and Employee with session management.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Employee management with CRUD operations and search functionality.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Automated payroll calculation including allowances, deductions, and progressive PPh 21.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Payslip management with status tracking and edit capabilities.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Secure employee self-service for viewing personal payslips.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Row Level Security (RLS) enforcement at the database level.</li>
+                                    <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Two-step payroll data saving with audit trail for salary components.</li>
+                                </ul>
+                                <ul class="mt-5 flex flex-wrap gap-2">
+                                    <li class="tech-chip">Flutter</li>
+                                    <li class="tech-chip">Dart</li>
+                                    <li class="tech-chip">Supabase</li>
+                                    <li class="tech-chip">PostgreSQL</li>
+                                    <li class="tech-chip">SQL</li>
+                                    <li class="tech-chip">Android</li>
+                                </ul>
+                                <footer class="mt-6 flex items-center justify-between border-t border-white/[0.06] pt-5">
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-mono text-xs text-slate-600">Source available on request</span>
+                                    </div>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience" class="relative scroll-mt-20 py-24 sm:py-28">
+                <div class="container-site">
+                    <div class="mb-14 mt-0" data-reveal>
+                        <div class="flex items-center gap-4">
+                            <p class="eyebrow">04.</p>
+                            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Where I've Worked</h2>
+                            <span class="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <ol class="max-w-3xl" data-reveal-group>
+                        <li data-reveal class="timeline-item">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <p class="eyebrow text-xs">February 2024 — December 2024</p>
+                            <h3 class="mt-2 text-lg font-semibold text-white">
+                                Quality Assurance &amp; Data Entry Intern
+                                <span class="text-slate-600">·</span>
+                                <span class="text-accent-300">PT. Komunitas Ide Sejahtera</span>
+                            </h3>
+                            <p class="mt-1 flex items-center gap-1.5 text-sm text-slate-500">
+                                <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Jakarta Selatan, Indonesia
+                            </p>
+                            <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slate-400">Tested web and mobile applications, documented results, processed data, and provided customer support.</p>
+                            <ul class="mt-4 max-w-2xl space-y-2.5">
+                                <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Tested web and mobile applications to check various features, conditions, and usage scenarios.</li>
+                                <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Documented application testing results and different application conditions using Microsoft Excel.</li>
+                                <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Identified and recorded issues or conditions found during the testing process for team evaluation.</li>
+                                <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Performed data entry and processing of vote-count data submitted by KPPS members through the company's web and mobile applications.</li>
+                                <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Checked submitted data to maintain data accuracy and consistency during the data processing process.</li>
+                                <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Provided customer support through WhatsApp to assist KPPS members with application-related issues.</li>
+                                <li class="flex gap-2.5 text-sm leading-relaxed text-slate-400"><svg class="mt-0.5 size-3.5 shrink-0 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg> Worked collaboratively in assigned teams to support application testing, data processing, customer support, and daily project operations.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section id="education" class="relative scroll-mt-20 py-24 sm:py-28">
+                <div class="container-site">
+                    <div class="mb-14 mt-0" data-reveal>
+                        <div class="flex items-center gap-4">
+                            <p class="eyebrow">05.</p>
+                            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Education</h2>
+                            <span class="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <ol class="max-w-3xl" data-reveal-group>
+                        <li data-reveal class="timeline-item">
+                            <span class="timeline-dot timeline-dot--icon" aria-hidden="true">
+                                <svg class="size-2.5 text-accent-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Z"></path><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"></path><path d="M22 9v5"></path></svg>
+                            </span>
+                            <p class="eyebrow text-xs">September 2023 — August 2027 (Expected)</p>
+                            <h3 class="mt-2 text-lg font-semibold text-white">Bachelor of Information Systems</h3>
+                            <p class="mt-1 text-sm font-medium text-accent-300">Bina Sarana Informatika University</p>
+                            <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slate-400">Focus on information systems, application development, databases, software engineering, UI/UX, and information technology.</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section id="certifications" class="relative scroll-mt-20 py-24 sm:py-28">
+                <div class="container-site">
+                    <div class="mb-14 mt-0" data-reveal>
+                        <div class="flex items-center gap-4">
+                            <p class="eyebrow">06.</p>
+                            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Certifications</h2>
+                            <span class="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="grid gap-6 md:grid-cols-2" data-reveal-group>
+                        <div data-reveal class="card card-hover group p-7">
+                            <div class="mb-5 grid size-12 place-items-center rounded-xl border border-accent-400/20 bg-accent-500/10 text-accent-300 transition-all duration-300 group-hover:border-accent-400/50 group-hover:shadow-glow">
+                                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><path d="M9 22h6"></path><path d="M12 15v7"></path><path d="M8.5 12.5 7 22h10l-1.5-9.5"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">BNSP Certification — Database Administrator</h3>
+                            <p class="mt-2 text-sm text-slate-500">BNSP (Badan Nasional Sertifikasi Profesi)</p>
+                        </div>
+                        <div data-reveal class="card card-hover group p-7">
+                            <div class="mb-5 grid size-12 place-items-center rounded-xl border border-accent-400/20 bg-accent-500/10 text-accent-300 transition-all duration-300 group-hover:border-accent-400/50 group-hover:shadow-glow">
+                                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><path d="M9 22h6"></path><path d="M12 15v7"></path><path d="M8.5 12.5 7 22h10l-1.5-9.5"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">BNSP Certification — Program Analysis</h3>
+                            <p class="mt-2 text-sm text-slate-500">BNSP (Badan Nasional Sertifikasi Profesi)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="relative scroll-mt-20 py-24 sm:py-28">
+                <div class="container-site">
+                    <div class="mb-14 mt-0" data-reveal>
+                        <div class="flex items-center gap-4">
+                            <p class="eyebrow">07.</p>
+                            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Get In Touch</h2>
+                            <span class="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="grid gap-14 lg:grid-cols-2 lg:gap-20">
+                        <div data-reveal>
+                            <p class="max-w-md text-base leading-relaxed text-slate-400">My inbox is always open — whether you have a project idea, a job opportunity, or just want to say hi. I will do my best to get back to you as soon as possible.</p>
+                            <div class="mt-10">
+                                <p class="text-xs font-semibold uppercase tracking-widest text-slate-500">Email me at</p>
+                                <div class="mt-3 flex flex-wrap items-center gap-4">
+                                    <a href="mailto:virzarahman@gmail.com" class="break-all text-xl font-semibold text-white transition-colors duration-300 hover:text-accent-300 sm:text-2xl">virzarahman@gmail.com</a>
+                                    <button type="button" data-copy="virzarahman@gmail.com" aria-label="Copy email address" class="copy-btn icon-btn size-9 cursor-pointer">
+                                        <svg class="icon-copy size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                        <svg class="icon-check size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 12.5 5 5 10-11"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <p class="text-xs font-semibold uppercase tracking-widest text-slate-500">Find me on</p>
+                                <div class="mt-4 flex items-center gap-3">
+                                    <a href="https://github.com/nzlvirza" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub — @nzlvirza" class="icon-btn"><svg class="size-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+                                    <a href="https://www.linkedin.com/in/virza" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn — in/virza" class="icon-btn"><svg class="size-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.54V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+                                    <a href="https://instagram.com/nzlavirza" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram — @nzlavirza" class="icon-btn"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"></circle></svg></a>
+                                    <a href="mailto:virzarahman@gmail.com" aria-label="Email" title="Email — virzarahman@gmail.com" class="icon-btn"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="m3.5 6.5 8.5 6 8.5-6"></path></svg></a>
+                                </div>
+                            </div>
+                            <p class="mt-10 flex items-center gap-2 text-sm text-slate-500">
+                                <svg class="size-4 text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Tangerang Selatan, Indonesia · Open to Internship
+                            </p>
+                        </div>
+
+                        <form data-contact-form action="#" method="POST" class="card p-7 sm:p-9" data-reveal="right">
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="contact-name" class="mb-2 block text-xs font-semibold uppercase tracking-widest text-slate-400">Name</label>
+                                    <input id="contact-name" name="name" type="text" required autocomplete="name" placeholder="Your name" class="input-field" />
+                                </div>
+                                <div>
+                                    <label for="contact-email" class="mb-2 block text-xs font-semibold uppercase tracking-widest text-slate-400">Email</label>
+                                    <input id="contact-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" class="input-field" />
+                                </div>
+                                <div>
+                                    <label for="contact-message" class="mb-2 block text-xs font-semibold uppercase tracking-widest text-slate-400">Message</label>
+                                    <textarea id="contact-message" name="message" rows="5" required placeholder="Tell me about your project..." class="input-field resize-none"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary group mt-8 w-full sm:w-auto">
+                                Send Message
+                                <svg class="size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.5 2.5-10 10"></path><path d="M21.5 2.5 15 21.5l-3.5-8-8-3.5 18-7.5Z"></path></svg>
+                            </button>
+                            <p class="mt-5 text-xs leading-relaxed text-slate-600">This form is a UI preview — backend delivery is coming soon. Meanwhile, reach me directly via email.</p>
+                            <p role="status" data-form-note class="mt-5 hidden rounded-xl border border-emerald-400/25 bg-emerald-400/[0.06] px-4 py-3 text-sm text-emerald-300">Thanks! Your message draft has been noted locally — please also send it via email.</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-white/[0.06] py-10">
+            <div class="container-site flex flex-col items-center justify-between gap-6 sm:flex-row">
+                <div class="text-center sm:text-left">
+                    <a href="#home" class="font-bold tracking-tight text-white transition-colors duration-300 hover:text-accent-300">
+                        Nazla Virza Rahman<span class="text-accent-400">.</span>
+                    </a>
+                    <p class="mt-1 text-xs text-slate-600">
+                        &copy; 2026 Nazla Virza Rahman · Built with Laravel, Tailwind CSS &amp; vanilla JavaScript
+                    </p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="https://github.com/nzlvirza" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="icon-btn size-9"><svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+                    <a href="https://www.linkedin.com/in/virza" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="icon-btn size-9"><svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.54V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+                    <a href="https://instagram.com/nzlavirza" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="icon-btn size-9"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"></circle></svg></a>
+                    <a href="mailto:virzarahman@gmail.com" aria-label="Email" class="icon-btn size-9"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="m3.5 6.5 8.5 6 8.5-6"></path></svg></a>
+                    <span class="mx-1 hidden h-5 w-px bg-white/10 sm:block" aria-hidden="true"></span>
+                    <a href="#home" aria-label="Back to top" class="icon-btn size-9"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V4"></path><path d="m5 11 7-7 7 7"></path></svg></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
