@@ -22,6 +22,7 @@ if ($uri !== '/' && is_file($file)) {
     $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
     if (isset($mimeTypes[$ext])) {
         header('Content-Type: ' . $mimeTypes[$ext]);
+        header('Cache-Control: public, max-age=31536000, immutable');
         readfile($file);
         exit;
     }

@@ -9,6 +9,27 @@
     },
     "routes": [
         {
+            "src": "/build/(.*)",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/images/(.*)"
+        },
+        {
+            "src": "/cv/(.*)"
+        },
+        {
+            "src": "/favicon.ico"
+        },
+        {
+            "src": "/robots.txt"
+        },
+        {
+            "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|pdf|json))$"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
