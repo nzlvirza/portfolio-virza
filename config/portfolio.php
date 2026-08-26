@@ -80,7 +80,7 @@ return [
             'category' => 'Tools',
             'icon' => 'tools',
             'description' => 'Productivity and version control tools.',
-            'items' => ['Microsoft Excel', 'Git', 'GitHub'],
+            'items' => ['VSCode', 'Microsoft Excel', 'Git', 'GitHub'],
         ],
     ],
 
