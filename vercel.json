@@ -1,6 +1,5 @@
 {
-    "version": 2,
-    "framework": null,
+    "$schema": "https://openapi.vercel.sh/vercel.json",
     "outputDirectory": "public",
     "buildCommand": "npm run build",
     "functions": {
@@ -10,7 +9,24 @@
     },
     "routes": [
         {
-            "handle": "filesystem"
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
+        },
+        {
+            "src": "/images/(.*)",
+            "dest": "/public/images/$1"
+        },
+        {
+            "src": "/cv/(.*)",
+            "dest": "/public/cv/$1"
+        },
+        {
+            "src": "/favicon.ico",
+            "dest": "/public/favicon.ico"
+        },
+        {
+            "src": "/robots.txt",
+            "dest": "/public/robots.txt"
         },
         {
             "src": "/(.*)",
