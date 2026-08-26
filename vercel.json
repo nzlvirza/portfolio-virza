@@ -9,20 +9,19 @@
     },
     "routes": [
         {
-            "src": "/build/(.*)",
-            "dest": "/build/$1"
+            "src": "/build/(.*)"
         },
         {
-            "src": "/images/(.*)",
-            "dest": "/images/$1"
+            "src": "/images/(.*)"
         },
         {
-            "src": "/cv/(.*)",
-            "dest": "/cv/$1"
+            "src": "/cv/(.*)"
         },
         {
-            "src": "/favicon.ico",
-            "dest": "/favicon.ico"
+            "src": "/favicon.ico"
+        },
+        {
+            "src": "/robots.txt"
         },
         {
             "src": "/(.*)",
