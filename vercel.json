@@ -1,7 +1,6 @@
 {
     "buildCommand": "npm run build",
     "installCommand": "npm install",
-    "outputDirectory": "public",
     "framework": null,
     "functions": {
         "api/index.php": {
@@ -10,7 +9,24 @@
     },
     "routes": [
         {
-            "handle": "filesystem"
+            "src": "/build/(.+)",
+            "dest": "/public/build/$1"
+        },
+        {
+            "src": "/(favicon\\.ico)",
+            "dest": "/public/$1"
+        },
+        {
+            "src": "/(robots\\.txt)",
+            "dest": "/public/$1"
+        },
+        {
+            "src": "/images/(.+)",
+            "dest": "/public/images/$1"
+        },
+        {
+            "src": "/cv/(.+)",
+            "dest": "/public/cv/$1"
         },
         {
             "src": "/(.*)",
