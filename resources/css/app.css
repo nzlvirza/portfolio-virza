@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @source '../js/**/*.js';
-@source '../../index.html';
+@source '../views/**/*.blade.php';
 
 @theme {
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
