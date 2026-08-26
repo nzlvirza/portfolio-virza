@@ -7,25 +7,10 @@
             "runtime": "vercel-php@0.9.0"
         }
     },
-    "routes": [
+    "rewrites": [
         {
-            "src": "/build/(.*)"
-        },
-        {
-            "src": "/images/(.*)"
-        },
-        {
-            "src": "/cv/(.*)"
-        },
-        {
-            "src": "/favicon.ico"
-        },
-        {
-            "src": "/robots.txt"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
+            "source": "/((?!build/|images/|cv/|favicon\\.ico|robots\\.txt).*)",
+            "destination": "/api/index.php"
         }
     ]
 }
