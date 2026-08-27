@@ -1,12 +1,4 @@
-node_modules/
-.git/
-tests/
-.phpunit.result.cache
-.phpunit.cache/
-.editorconfig
-.gitattributes
+/node_modules
+/.git
+/tests
 .env
-.env.backup
-.env.production
-README.md
-phpunit.xml
